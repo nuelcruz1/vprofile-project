@@ -24,15 +24,22 @@ pipeline {
             }
             post {
                 success {
-                    echo "Now Archiving"
+                    echo "Now Archiving."
                     archiveArtifacts artifacts: '**/*.war'
                 }
             }
         }
-        stage('Checkstyle Analysis'){
+
+        stage('Test'){
             steps{
-                sh 'mnv checkstyle:checkstyle'
+                sh 'mvn test'
             }
         }
+         stage('Checkstyle Analysis'){
+            steps{
+                sh 'mvn checkstyle:checkstyle'
+            }
+        }
+
     }
 }
