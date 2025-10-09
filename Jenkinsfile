@@ -13,7 +13,7 @@ pipeline {
 		CENTRAL_REPO = 'vpro-maven-central'
 		NEXUSIP = '172.31.19.98'
 		NEXUSPORT = '8081'
-		NEXUS_GRP_REPO = 'vpro-maven-group'
+		NEXUS_GRP_REPO = 'vproile-maven-group'
         NEXUS_LOGIN = 'nexuslogin'
     }
 
