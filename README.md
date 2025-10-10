@@ -1,4 +1,4 @@
-# Prerequisites by Nuel
+# Prerequisites by NUEL
 #
 - JDK 17 or 21
 - Maven 3.9
